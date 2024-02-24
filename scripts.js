@@ -30,7 +30,7 @@ function update(time) {
         return
     }
     const delta = time - lastTime;
-    updateGround(delta);
+    updateGround(delta, 1);
     // console.log(delta);
     lastTime = time;
     window.requestAnimationFrame(update);
