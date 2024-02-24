@@ -8,6 +8,7 @@ export function setCustomProperty (element, property, value) {
     element.style.setProperty(property, value)
 }
 
-export function incrementCustomProperty () {
-
+// Getting the current value, adding to it, and setting the value
+export function incrementCustomProperty (element, property, increment) {
+    setCustomProperty(element, property, getCustomProperty(element, property) + increment);
 }
