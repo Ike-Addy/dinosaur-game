@@ -1,4 +1,4 @@
-import { incrementCustomProperty, getCustomProperty } from "./updateCustomProperty";
+import { incrementCustomProperty, getCustomProperty } from "./updateCustomProperty.js";
 
 const dinoElement = document.querySelector('[data-dino]');
 const JUMP_SPEED = .45;
@@ -23,7 +23,7 @@ export function updateDino(delta, speedScale) {
 
 function handleRun(delta, speedScale) {
     if (isJumping) {
-        dinoElement.src = 'images/dino-stationary.png';
+        dinoElement.src = 'images/dino-stationary.png'
         return
     }
     if (currentFrameTime >= FRAME_TIME) {
@@ -34,7 +34,7 @@ function handleRun(delta, speedScale) {
     currentFrameTime += delta * speedScale;
 }
 
-function handleJump() {
+function handleJump(delta) {
     if (!isJumping) return
 
     incrementCustomProperty(dinoElement, '--bottom', yVelocity * delta)
