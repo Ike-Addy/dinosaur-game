@@ -1,6 +1,6 @@
 import { setupGround, updateGround } from './ground.js';
-import { updateDino, setupDino } from './dino.js';
-import { updateCactus, setupCactus } from './cactus.js';
+import { updateDino, setupDino, getDinoRectangle } from './dino.js';
+import { updateCactus, setupCactus, getCactusRectangle } from './cactus.js';
 
 const WORLD_WIDTH = 100;
 const WORLD_HEIGHT = 30;
@@ -36,6 +36,10 @@ function update(time) {
     lastTime = time;
     window.requestAnimationFrame(update);
 
+}
+
+function checkLose() {
+    const dinoRectangle = getDinoRectangle
 }
 
 function updateSpeedScale(delta) {

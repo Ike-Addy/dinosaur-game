@@ -31,7 +31,7 @@ export function updateDino(delta, speedScale) {
     handleJump(delta);
 }
 
-export function getDinoRectangles() {
+export function getDinoRectangle() {
     return dinoElement.getBoundingClientRect()
 }
 

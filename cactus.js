@@ -32,7 +32,7 @@ export function updateCactus(delta, speedScale) {
     nextCactusTime -= delta
 }
 
-export function getCactusRectangles() {
+export function getCactusRectangle() {
     return [...document.querySelectorAll('[data-cactus]')].map(cactus => {
         return cactus.getBoundingClientRect()
     })
