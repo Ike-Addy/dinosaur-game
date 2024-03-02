@@ -1,6 +1,7 @@
 const SPEED = 0.05;
 const CACTUS_INTERVAL_MIN = 500;
 const CACTUS_INTERVAL_MAX = 2000;
+const worldElement = document.querySelector('[data-world]');
 
 export function setupCactus() {
 
